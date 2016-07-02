@@ -1,6 +1,6 @@
 import React from "react";
 import {render} from "react-dom";
-import Slide2D from ".";
+import Slide2D from "./src";
 
 const div = document.createElement("div");
 document.body.appendChild(div);
