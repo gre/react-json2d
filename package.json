@@ -1,7 +1,7 @@
 {
-  "name": "react-slide2d",
+  "name": "react-json2d",
   "version": "0.0.2",
-  "description": "A React thin wrapper of slide2d library",
+  "description": "A React thin wrapper of json2d library",
   "main": "lib/index.js",
   "scripts": {
     "compile": "rm -rf lib/ && babel --presets es2015,stage-1,react --source-maps -d lib src",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:gre/react-slide2d.git"
+    "url": "git@github.com:gre/react-json2d.git"
   },
   "keywords": [
     "canvas2d",
@@ -21,13 +21,13 @@
   "author": "Gaëtan Renaudeau",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gre/react-slide2d/issues"
+    "url": "https://github.com/gre/react-json2d/issues"
   },
-  "homepage": "https://github.com/gre/react-slide2d",
+  "homepage": "https://github.com/gre/react-json2d",
   "dependencies": {
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
-    "slide2d": "^1.1.1"
+    "json2d": "^1.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",

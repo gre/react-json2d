@@ -1,12 +1,12 @@
 import React from "react";
 import {render} from "react-dom";
-import Slide2D from "./src";
+import JSON2D from "./src";
 
 const div = document.createElement("div");
 document.body.appendChild(div);
 
 render(
-<Slide2D width={600} height={300}>{{
+<JSON2D width={600} height={300}>{{
   "background": "#efd",
   "size": [ 800, 600 ],
   "draws": [
@@ -41,5 +41,5 @@ render(
       [ "stroke" ]
     ]
   ]
-}}</Slide2D>,
+}}</JSON2D>,
 div);

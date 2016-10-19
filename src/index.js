@@ -2,9 +2,9 @@ import React, {
   Component,
   PropTypes,
 } from "react";
-import Slide2d from "slide2d";
+import JSON2D from "json2d";
 
-export default class Slide2D extends Component {
+export default class Json2d extends Component {
   static propTypes = {
     children: PropTypes.object.isRequired,
     width: PropTypes.number.isRequired,
@@ -24,7 +24,7 @@ export default class Slide2D extends Component {
   }
   componentDidMount () {
     this.ctx = this._ref.getContext("2d");
-    this.slide2d = Slide2d(this.ctx, this.props.resolveImage);
+    this.json2d = JSON2D(this.ctx, this.props.resolveImage);
     this.draw(this.props);
   }
   componentDidUpdate (props) {
@@ -33,7 +33,7 @@ export default class Slide2D extends Component {
   draw ({ children, renderVisitor }) {
     if (this._currentDrawn === children) return;
     this._currentDrawn = children;
-    this.slide2d.render(children, renderVisitor);
+    this.json2d.render(children, renderVisitor);
   }
   render () {
     const { width, height, ratio } = this.props;
