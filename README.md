@@ -1,10 +1,6 @@
 react-json2d
 =======
 
-**IMPORTANT: the library was renamed to react-json2d**
-
----
-
 
 React library to use [`json2d` library](https://github.com/gre/json2d).
 
