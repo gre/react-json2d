@@ -1,6 +1,11 @@
 react-slide2d
 =======
 
+**IMPORTANT: the library was renamed to react-json2d**
+
+---
+
+
 React library to use [`slide2d` library](https://github.com/gre/slide2d).
 
 ### Props
