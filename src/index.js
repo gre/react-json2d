@@ -27,7 +27,7 @@ export default class Slide2D extends Component {
     this.slide2d = Slide2d(this.ctx, this.props.resolveImage);
     this.draw(this.props);
   }
-  componentWillUpdate (props) {
+  componentDidUpdate (props) {
     this.draw(props);
   }
   draw ({ children, renderVisitor }) {
