@@ -1,6 +1,6 @@
 {
   "name": "react-json2d",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A React thin wrapper of json2d library",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,12 @@
     "type": "git",
     "url": "git@github.com:gre/react-json2d.git"
   },
-  "keywords": ["canvas2d", "json", "react", "slide"],
+  "keywords": [
+    "canvas2d",
+    "json",
+    "react",
+    "slide"
+  ],
   "author": "Gaëtan Renaudeau",
   "license": "ISC",
   "bugs": {
