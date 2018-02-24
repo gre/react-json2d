@@ -1,7 +1,5 @@
-import React, {
-  PureComponent,
-  PropTypes,
-} from "react";
+import React, { PureComponent } from "react";
+import PropTypes from "prop-types";
 import JSON2D from "json2d";
 
 export default class Json2d extends PureComponent {
@@ -11,24 +9,26 @@ export default class Json2d extends PureComponent {
     height: PropTypes.number.isRequired,
     ratio: PropTypes.number,
     resolveImage: PropTypes.func,
-    renderVisitor: PropTypes.func,
+    renderVisitor: PropTypes.func
   };
   static defaultProps = {
-    ratio: window.devicePixelRatio,
+    ratio: window.devicePixelRatio
   };
-  componentDidMount () {
+  componentDidMount() {
     this.ctx = this._ref.getContext("2d");
     this.json2d = JSON2D(this.ctx, this.props.resolveImage);
     this.draw(this.props);
   }
-  componentDidUpdate () {
+  componentDidUpdate() {
     this.draw(this.props);
   }
-  draw ({ children, renderVisitor }) {
+  draw({ children, renderVisitor }) {
     return this.json2d.render(children, renderVisitor);
   }
-  onRef = ref => { this._ref = ref; };
-  render () {
+  onRef = ref => {
+    this._ref = ref;
+  };
+  render() {
     const { width, height, ratio } = this.props;
     return (
       <canvas

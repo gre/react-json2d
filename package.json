@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/gre/react-json2d",
   "dependencies": {
-    "json2d": "^1.1.1"
+    "json2d": "^1.1.1",
+    "prop-types": "^15.6.0"
   },
   "peerDependencies": {
     "react": "*"
